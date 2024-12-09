@@ -1,0 +1,39 @@
+.klienci{
+    display: flex;
+    width: 100%;
+    color: #E0D7D7;
+    font-size: 1.5rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.klienticon {
+    height: 2rem;
+    width: auto;
+    transition: height 0.3s ease; /* Add transition for smooth effect */
+}
+
+.klienticon:hover {
+    height: 3rem; /* Change height on hover */
+    cursor: pointer;
+}
+
+.klienciicons{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media (max-width: 1000px) {
+    .klienci{
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+
+}

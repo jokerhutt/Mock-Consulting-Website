@@ -1,0 +1,102 @@
+:root {
+  --brand: #E0D7D7;
+}
+
+.backgroundmain{
+  display: flex;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  flex-direction: column;
+  
+  gap: 3rem;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+
+
+.popupmenu{
+  z-index: 29;
+  position: fixed;
+  background-color: #101010;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  animation: swipeInFromBottom 0.8s ease-out;
+}
+
+.popupmain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 3.8rem;
+  font-weight: bold;
+  flex-direction: column;
+  color: #E0D7D7;
+}
+
+@keyframes swipeInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.popupmain ul {
+  display: flex;
+  flex-direction: column; 
+  gap: 1.5rem;
+  text-align: center;
+  list-style: none;
+}
+@keyframes fadeOutToTop {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+@media (max-width: 1000px) {
+  .backgroundmain{
+    display: flex;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    flex-direction: column;
+    
+    gap: 2rem;
+  }
+  .popupmain {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+  }
+
+  .popupmain ul {
+    display: flex;
+    flex-direction: column; 
+    gap: 1.5rem;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+  }
+
+  .icons{
+    width: 33%;
+  }
+  .logoname{
+    width: 34%;
+  }
+  .wheel{
+    width: 33%;
+  }
+
+
+}

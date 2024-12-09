@@ -1,0 +1,78 @@
+/* Container styles */
+.example-container {
+    background-color: black; /* bg-neutral-800 */
+  }
+  
+  /* Scroll prompts */
+  .scroll-prompt {
+    display: flex;
+    height: 12rem; /* h-48 */
+    align-items: center;
+    justify-content: center;
+    font-weight: 600; /* font-semibold */
+    text-transform: uppercase;
+    color: #E0D7D7; /* text-neutral-500 */
+  }
+
+  .scroll-prompt h2 {
+    font-size: 2.5rem;
+  }
+  
+  /* Horizontal scroll carousel */
+  .carousel-section {
+    position: relative;
+    height: 300vh; /* h-[300vh] */
+    background-color: black; /* bg-neutral-900 */
+  }
+  
+  .carousel-container {
+    position: sticky;
+    top: 0;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .carousel-motion {
+    display: flex;
+    gap: 3rem; /* gap-4 */
+  }
+  
+  /* Card styles */
+  .card-container {
+    position: relative;
+    height: 450px;
+    width: 450px;
+    overflow: hidden;
+    background-color: #e5e7eb; /* bg-neutral-200 */
+  }
+  
+  .card-background {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    transition: transform 0.3s;
+  }
+  
+  .card-container:hover .card-background {
+    transform: scale(1.1);
+  }
+  
+  .card-content {
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    display: grid;
+    place-content: center;
+  }
+  
+  .card-title {
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    padding: 2rem; /* p-8 */
+    font-size: 3.75rem; /* text-6xl */
+    font-weight: 900; /* font-black */
+    text-transform: uppercase;
+    color: white;
+    backdrop-filter: blur(20px); /* backdrop-blur-lg */
+  }

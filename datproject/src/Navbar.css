@@ -1,0 +1,92 @@
+.navbarcs{
+    color: white;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 6rem;
+    background-color: none;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 30;
+}
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes exy {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(45deg);
+    }
+  }
+  @keyframes yxe {
+    0% {
+      transform: rotate(45deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  .plussy.clicked{
+    animation: exy 1s forwards;
+  }
+  .plussy:not(.clicked) {
+    animation: yxe 1s forwards;
+}
+
+  .plussy{
+    z-index: 32;
+    cursor: pointer;
+  }
+
+.wheel h1{
+    position: absolute;
+    font-weight: lighter;
+    font-size: 3rem;
+}
+.rotation{
+    z-index: 31;
+    height: 5rem;
+    animation: rotate 25s infinite linear;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icon{
+    height: auto;
+    width: 1.5rem;
+}
+
+.logoname h1{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.logoname{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.wheel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+

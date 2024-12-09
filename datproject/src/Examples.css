@@ -1,0 +1,45 @@
+.examplecard {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-top: 1px solid #E0D7D7;
+    margin-bottom: 1rem;
+}
+
+.maincard{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.exampleimage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.exampleimage img {
+    width: 100%;
+    height: auto;
+    border-radius: 40px;
+    opacity: 80%;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
+}
+
+.exampleinfo{
+    color: #E0D7D7;
+    text-align: center;
+}
+
+.maincard{
+    color: #E0D7D7;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.exampleinfo p{
+    font-weight: bold;
+    color: #A1A1A1;
+}
